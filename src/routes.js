@@ -12,11 +12,11 @@ import ScoreList from "./pages/score-table.vue";
 import Winner from "./pages/winner.vue";
 
 export default[
-    {
-        path: '/make-game',
-        meta:{layout:'initial'},
-        component: Login
-    },
+    // {
+    //     path: '/make-game',
+    //     meta:{layout:'initial'},
+    //     component: Login
+    // },
     {
         path: '/join',
         meta:{layout:'initial'},

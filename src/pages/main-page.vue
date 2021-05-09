@@ -3,22 +3,24 @@
 	 <div class="row bg">
 		<div class="col s12">
 			<div class="row">
-				<div class="col s9">
+				<div class="col s8">
 				</div>
 				<div class="col s3">
-					<a  class="waves-effect waves-light modal-trigger" href="#profile" v-on:click="showProfile">
+					<a style=" margin-right:20px;" class="waves-effect waves-light modal-trigger" href="#profile" v-on:click="showProfile">
 						<img class="menu" src="./../assets/menu_1.png">
 					</a>
 				</div>
+				<div class="col s1">
+				</div>
 			</div>
 			<div class="row">
-				<div class="col s12">
+				<div class="col s12 center-align">
 					<img class="partyG-logo" src="./../assets/partyG-logo.png" >
 				</div>
 			</div>
 			<div class="row">
 				<div class="col s12">
-					<div style="height:200px !important;"></div>
+					<div style="height:100px !important;"></div>
 				</div>
 			</div>
 			<div class="row">	
@@ -28,11 +30,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12  center-align no-padding">
-					<!-- <a  class="waves-effect waves-light">
-						<img class="" src="./../assets/buttun_2.png" style="background-size: cover;">
-						<p class="buttun_text" @click="redirectCrateGame">شروع بازی جدید</p>
-					</a> -->
-					<button @click="redirectCrateGame" class="create_game_btn" >شروع بازی جدید</button>
+					<button @click="redirectCreateGame" class="create_game_btn" >شروع بازی جدید</button>
 				</div>
 			</div>  
 		</div>
@@ -86,8 +84,9 @@ export default {
 		redirectJoinGame(){
 			this.$router.push('/join');
 		},
-		redirectCrateGame(){
-			this.$router.push('/make-game');
+		redirectCreateGame(){
+			window.location = `http://127.0.0.1:8000/glogin`;
+			// this.$router.push('/make-game');
 		}
 	}
 }

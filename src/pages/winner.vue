@@ -22,7 +22,7 @@
 		<div class="row winner_card" >
 			<div class="col s12">
 				<div class="row">
-					<div class="col s12 center-align" style="height:310px;padding-top: 30px;">
+					<div class="col s12 center-align" style="height:270px;padding-top: 10px;">
 						<div class="Group_question">
 							<img class="profile_winner" src="./../assets/profile.png">	
 							<img class="photo_winner" :src="currentGamerProfile()" >	
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div style="padding-top: 10px;" class="col s12 center-align">
+					<div class="col s12 center-align">
 						<span class="winner_text">!!!!برنده‌ه‌ه‌ه</span>
 					</div>
 				</div>

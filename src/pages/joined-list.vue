@@ -6,13 +6,13 @@
 					<img style="padding-top: 30px !important;" src="./../assets/back_b.png" >
 				</a>
 			</div>
-			<div class="col s9 right-align">
+			<div style="padding-top:30px" class="col s9 right-align">
 				<span class="title">بازی شما</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12" style="position: relative;height: 200px;">
-				<input  style="position: absolute;top: 50px;left:35px;width: 300px;height: 77px;" class="textfield"  v-model="gameToken" >            				
+			<div class="col s12 center-align" style="position: relative;height: 200px;">
+				<input  style="position: absolute;top: 50px;left:35px;width: 250px;height: 70px;" class="textfield"  v-model="gameToken" >            				
 				<button style="width: 90px;height: 54px;" class="small_buttun">
 					<span>کد مخفی</span>
 				</button>
@@ -40,7 +40,7 @@
 				<div class="col s8 right-align">
 					<div class="gamer_name">{{gamer.name}}</div>
 				</div>
-				<div class="col s4" style="height:120px">
+				<div class="col s4" style="height:100px">
 					<div class="Group">
 						<img class="profile" src="./../assets/profile.png">	
 						<img class="photo" :src="selectGamerProfile(gamer.id)" >	
@@ -61,7 +61,7 @@
 				<span class="subtitle">:طول بازی</span>
 			</div>
 		</div>
-		<!-- <div class="row">
+		<div class="row">
 			<div class="col s3 center-align">
 				<label>
 					<input name="group1" type="radio" value="5" v-model="rounds" checked/>
@@ -100,10 +100,10 @@
 			<div class="col s3 center-align">
 				<span>بی نهایت</span>
 			</div>
-		</div> -->
+		</div>
 		<div class="row">
 		    <div class="col s12 center-align">
-				<button @click="startGame" style="width: 214px;height: 102px;margin:30px;" class="login" >شروع بازی </button>
+				<button @click="startGame" style="width: 200px;height: 100px;margin:30px;" class="login" >شروع بازی </button>
 			</div>
 		</div>
 		 <div id="profile" :class="['modal-overlay bottom-sheet',openProfile?' open':'']" :style="[openProfile ? modalStyle: '']">

@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="row">
-			<div class="col s9">
+        <div class="row" style="padding-right: 30px;">
+			<div style="padding-top: 50px !important;" class="col s9 center-align">
 				<span class="step">مرحله {{currentRound}} / {{numOfRounds}}</span>
 			</div>
-			<div class="col s3">
+			<div style="padding-top: 30px !important;" class="col s3">
 				<a  class="waves-effect waves-light modal-trigger" href="#inner-profile" v-on:click="showInnerProfile">
 					<img class="menu" src="./../assets/menu_1.png">
 				</a>
@@ -30,7 +30,7 @@
 		</div>
 		<div class="row" v-for="vote in votesList" :key="vote.id" >
 			<div class="col s3 center-align" style="direction: rtl;">
-				<span class="count">{{vote.points}}</span><span class="unit">بار </span>
+				<span style="padding-top:10px;" class="count">{{vote.points}}</span><span class="unit">بار </span>
 			</div>
 			<div class="col s9" style="display: inline-flex;">
 				<div class="responseBox" >
@@ -114,7 +114,7 @@ export default {
 				}
 			}).then((response)=>{
 				console.log('vote by all list is =', response.data)
-				if(response.data[0]["voted_by_all"] == true){
+				if(response.data[0]["voted_by_all"] == false  && response.data[0]["answered_by_all"] == false ){
 					this.$router.push('/score-table')
 				}
 			})

@@ -1,10 +1,10 @@
 <template>
    <div>
-        <div class="row">
-			<div class="col s9">
+        <div class="row" style="padding-right: 30px;">
+			<div style="padding-top: 50px !important;"  class="col s9 center-align">
 				<span class="step">مرحله {{currentRound}} / {{numOfRounds}}</span>
 			</div>
-			<div class="col s3">
+			<div style="padding-top: 30px !important;" class="col s3">
 				<a  class="waves-effect waves-light modal-trigger" href="#inner-profile" v-on:click="showInnerProfile">
 					<img class="menu" src="./../assets/menu_1.png">
 				</a>
@@ -23,14 +23,14 @@
 				</svg>
 			</div>
 		</div>
-		<div class="row" v-for="score in scoreList" :key="score.id">
-			<div class="col s2 right-align" >
+		<div class="row" style="direction: rtl;" v-for="score in scoreList" :key="score.id">
+			<div class="col s3 right-align" >
 				<span class="score_point">{{score.points}}</span>
 			</div>
-			<div class="col s6 right-align">
+			<div class="col s4 right-align">
 				<div class="gamer_name">{{score.name}}</div>
 			</div>
-			<div class="col s4" style="height:120px">
+			<div class="col s4 right-align" style="height:100px">
 				<div class="Group" style=" position: relative;">
 					<img class="profile" src="./../assets/profile.png" >    
 					<img class="photo_question" :src="selectGamerProfile(score.id)" >      

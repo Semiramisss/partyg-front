@@ -1,21 +1,21 @@
 <template>
      <div>
-        <div class="row">
-			<div class="col s9">
+        <div class="row" style="padding-right: 30px;">
+			<div style="padding-top: 50px !important;" class="col s9 center-align">
 				<span class="step">مرحله {{currentRound}} / {{numOfRounds}}</span>
 			</div>
-			<div class="col s3">
+			<div style="padding-top: 30px !important;" class="col s3">
 				<a  class="waves-effect waves-light modal-trigger" href="#inner-profile" v-on:click="showInnerProfile">
 					<img class="menu" src="./../assets/menu_1.png">
 				</a>
 			</div>
 		</div>
-       <div style="min-height: 200px;">
+       <div style="min-height: 130px;">
 			<div class="row" >
 				<div class="col s8 right-align">
 					<span class="question">{{getCurrentQuestion}} </span>
 				</div>
-				<div class="col s4" style="height:120px">
+				<div class="col s4" style="height:100px">
 					<div class="Group_question">
 						<img class="profile_off" src="./../assets/profile_off.png">	
 						<img class="photo_question" src="./../assets/photo_2020-09-29_17-35-11.png" >	
@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12">
+			<div class="col s12 center-align">
 				<span class="subtitle_question">.پاسخی که خودت بیشتر  پسندیدی رو انتخاب کن</span>
 			</div>
 		</div>

@@ -13,19 +13,20 @@
 .bg{
     background: url('./../partyG_main.png');
     background-size: cover;
+    min-height: 100vh;
 }
 .container {
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
-    /* min-height: 100vh; */
+    min-height: 100vh;
     background: rgb(100,245,227);
     background: linear-gradient(180deg, rgba(100,245,227,1) 0%, rgba(254,245,180,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 .join_game_btn{
-    width: 340px;
-    height: 160px; 
+    width: 200px;
+    height: 100px;
     --web-animation: fadein 0.3s ease-out;
     --web-action-type: page;
     --web-action-target: Meimoni_joined_gamers___2.html;
@@ -37,7 +38,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 22px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border: none;
@@ -45,8 +46,8 @@
 }	
 
 .create_game_btn{
-    width: 340px;
-    height: 160px; 
+    width: 200px;
+    height: 100px; 
     --web-animation: fadein 0.3s ease-out;
     --web-action-type: page;
     --web-action-target: Meimoni_joined_gamers___2.html;
@@ -58,7 +59,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 22px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border: none;
@@ -78,17 +79,15 @@
 }
 #registerPartyG {
     width: 375px;
-    height: 100%;
-    /* background-color: rgba(255,255,255,1); */
+    /* height: 100%; */
+    min-height: 100vh;
     background: rgb(100,245,227);
     background: linear-gradient(180deg, rgba(100,245,227,1) 0%, rgba(254,245,180,1) 50%, rgba(255,255,255,1) 100%);
-
     --web-view-name: Meimoni_new/join;
     --web-view-id: registerPartyG;
     --web-scale-on-resize: true;
     --web-center-horizontally: true;
     --web-enable-deep-linking: true;
-    /* outline: 1px dashed red; */
 }
 .inputBox{
     background:url('./../textfild.png') no-repeat;
@@ -120,7 +119,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 22px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border: none;
@@ -128,6 +127,7 @@
 .partyG-logo {
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     overflow: visible;
+    width: 250px;
 }
 
 .header {
@@ -145,13 +145,14 @@
 }
 	
 .join-description {
-    width: 302px;
-    height: 156px;
+    /* width: 302px;
+    height: 156px; */
+    text-align: justify;
     text-align: right;
     font-family: Yekan;
     font-style: normal;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(0,0,0,1);
 }
 
@@ -166,18 +167,16 @@
 }
 
 .join-header {
-    width: 336px;
-    height: 32px;
     text-align: center;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 58px;
-    color: rgba(33,33,33,0.498);
+    font-size: 34px;
+    color: rgba(33, 33, 33, 0.842);
 }
 
 .small_buttun {
-    left: 140px;
+    left: 120px;
     position: absolute; 
     top: 13px;
     overflow: visible;
@@ -196,20 +195,18 @@
 }
 
 .title {
-    flex: 50%;
-    padding: 10px;
     text-align: right;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 38px;
-    color: rgba(33,33,33,0.498);
+    font-size: 34px;
+    color: rgba(33, 33, 33, 0.842);
 }
 
 .textfield {
     overflow: visible;
-    background: url('./../textfild.png');
-    background-size: cover;
+    background: url('./../textfild.png')no-repeat;
+    background-size: contain;
     text-align: center;
     font-family: SF Pro Text;
     font-style: normal;
@@ -225,7 +222,7 @@
     width: 140px;
     height: 67px;
     left: 15px; 
-    top: 110px;
+    top: 100px;
     overflow: visible;
     background: url('./../buttun_3.png');
     background-size: cover;
@@ -233,7 +230,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border: none;
@@ -299,14 +296,12 @@
 }
 
 .step {
-    flex:50%;
-    padding: 10px;
-    text-align: left;
+    text-align: center;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    color: rgba(33,33,33,0.498);
+    font-size: 18px;
+    color: rgba(33, 33, 33, 0.842);
 }
 
 .menu {
@@ -324,8 +319,8 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    color: rgba(112,112,112,1);
+    font-size: 20px;
+    color: rgb(78, 78, 78);
 }
 
 .Group_question {
@@ -363,8 +358,8 @@
 }
 
 .inputBox_question{
-    background:url('./../textfild.png') repeat-y right;
-    background-size: cover;
+    background:url('./../textfild.png') no-repeat;
+    background-size: contain;
     overflow: visible;
     white-space: nowrap;
     text-align: center;
@@ -448,7 +443,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     color: rgba(33,33,33,0.498);
     letter-spacing: 0.16px;
 }
@@ -479,30 +474,28 @@
 }
 
 .textfield_question {
-    width: 300px;
-    height: 77px;
+    width: 250px;
+    height: 70px;
     overflow: visible;
-    background: url('./../textfild.png');
-    background-size: cover;
+    background: url('./../textfild.png') no-repeat;
+    background-size: contain;
     white-space: nowrap;
     text-align: center;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 24px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border: none;
 }
 
 .count{
-    width: 33px;
-    height: 49px;
     text-align: center;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 20px;
     color: rgba(36,33,38,1);
 }
 
@@ -560,13 +553,12 @@
 
 .score {
     overflow: hidden;
-    height:  72px; 
     text-align: center;
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 58px;
-    color: rgba(33,33,33,0.498);
+    font-size: 38px;
+    color: rgba(33,33,33,0.502);
 }
 
 
@@ -585,10 +577,10 @@
 }
 
 .btnGame{
-    width: 214px;
-    height: 102px;
-    background: url('./../buttun_3.png');
-    background-size: cover;
+    width: 200px;
+    height: 100px;
+    background: url('./../buttun_3.png')no-repeat;
+    background-size: contain;
     white-space: nowrap;
     --web-animation: fadein 0.3s ease-out;
     --web-action-type: page;
@@ -598,7 +590,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 22px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border:none;
@@ -617,11 +609,10 @@
 }
 
 .winner_card {
-    background:url('./../card_2.png') repeat-y right;
-       background-size: cover;
-    /* position: absolute; */
-    width: 350px;
-    height: 420px;
+    background:url('./../card_2.png') no-repeat;
+       background-size: contain;
+    width: 300px;
+    height: 340px;
     left: 13px;
     top: 243px;
     overflow: visible;
@@ -629,8 +620,8 @@
 
 .profile_winner{
     position: absolute;
-    width: 306px;
-    height: 305px;
+    width: 230px;
+    height: 230px;
     left: 5px;
     top: 5px;
     overflow: visible;
@@ -638,10 +629,10 @@
 
 .photo_winner{
     position: absolute;
-    width: 233px;
-    height: 233px;
-    left: 35px;
-    top: 35px;
+    width: 180px;
+    height: 180px;
+    left: 28px;
+    top: 28px;
     overflow: visible;
 }
 
@@ -655,7 +646,7 @@
     font-family: Yekan;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 28px;
     color: rgba(255,255,255,1);
     letter-spacing: 0.16px;
     border:none;

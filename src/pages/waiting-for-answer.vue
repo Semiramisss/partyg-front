@@ -1,16 +1,16 @@
 <template>
 	  <div>
-		<div class="row">
-			<div class="col s9">
+		<div class="row" style="padding-right: 30px;">
+			<div style="padding-top: 20px !important;" class="col s9 center-align">
 				<span class="step">مرحله {{currentRound}} / {{numOfRounds}}</span>
 			</div>
-			<div class="col s3">
+			<div tyle="padding-top: 30px !important;" class="col s3">
 				<a  class="waves-effect waves-light modal-trigger" href="#inner-profile" v-on:click="showInnerProfile">
 					<img class="menu" src="./../assets/menu_1.png">
 				</a>
 			</div>
 		</div>
-		<div style="min-height: 200px;">
+		<div style="min-height: 130px;">
 			<div class="row" >
 				<div class="col s8 right-align" style="margin-top: 25px;">
 					<span class="question_waiting">{{getCurrentQuestion}}</span>
@@ -38,17 +38,17 @@
 		</div>
 	
 		<!-- <template v-for="answer in answersList" :key="answer.id"> -->
-			<div class="row" v-for="answer in answersList" :key="answer.id">
-				<div class="col s2 right-align" v-bind:id="`buzz${answer.id}`" >
+			<div class="row" style="direction: rtl;" v-for="answer in answersList" :key="answer.id">
+				<div class="col s3 right-align" v-bind:id="`buzz${answer.id}`" >
 					<img v-if="!answer.has_answer" class="buzz" src="./../assets/buzz.png" >
 				</div>
-				<div class="col s6 right-align">
+				<div class="col s5 center-align">
 					<div class="gamer_name">{{answer.name}}</div>
 				</div>
 				<div class="col s4" style="height:120px">
-					<div class="Group_question">
+					<div class="Group">
 						<img class="profile" src="./../assets/profile.png" >    
-						<img class="photo_question" :src="selectGamerProfile(answer.id)" >      
+						<img class="photo" :src="selectGamerProfile(answer.id)" >      
 					</div>
 				</div>
 			</div>

@@ -1,21 +1,21 @@
 <template>
     <div>
-		<div class="row">
-			<div class="col s9">
+		<div class="row" style="padding-right: 30px;">
+			<div style="padding-top: 20px !important;" class="col s9 center-align">
 				<span class="step">مرحله {{currentRound}} / {{numOfRounds}}</span>
 			</div>
-			<div class="col s3">
+			<div style="padding-top: 30px !important;" class="col s3">
 				<a  class="waves-effect waves-light modal-trigger" href="#inner-profile" v-on:click="showInnerProfile">
 					<img class="menu" src="./../assets/menu_1.png">
 				</a>
 			</div>
 		</div>
-		<div style="min-height: 200px;">
+		<div style="min-height: 130px;">
 			<div class="row" >
-				<div class="col s8 right-align">
+				<div class="col s8 right-align" style="padding-top: 10px;" >
 					<span class="question">{{currentQuestion}}</span>
 				</div>
-				<div class="col s4" style="height:120px">
+				<div class="col s4" style="height:100px">
 					<div class="Group_question">
 						<img class="profile_off" src="./../assets/profile_off.png">	
 						<img class="photo_question" src="./../assets/photo_2020-09-29_17-35-11.png" >	
@@ -32,19 +32,19 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s4"></div>
-			<div class="col s4 center-align">
+			<div class="col s3"></div>
+			<div class="col s6 center-align">
 				<div class="Group_question">
 					<img class="profile_question" src="./../assets/profile.png" >    
 					<img class="profile-image" :src="currentGamerProfile()" >      
 				</div>
 			</div>
-			<div class="col s4"></div>
+			<div class="col s3"></div>
 		</div>
 
 		<div class="row">
 			<div class="col s12">
-				<input style="width: 300px;height: 77px;" class="inputBox_question" v-model="answer" placeholder="پاسخ چند کلمه‌ای تو اینجا بنویس">
+				<input style="width: 250px;height: 70px;" class="inputBox_question" v-model="answer" placeholder="پاسخ چند کلمه‌ای تو اینجا بنویس">
 			</div>
 		</div>
 		<div class="row">

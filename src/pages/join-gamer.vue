@@ -24,17 +24,17 @@
 		</div>
 		<div class="row">
 			<div class="col s12 right-align">
-           		<span class="join-description">اگر در صفحه اصلی پارتی‌گ! روی دکمه "شروع بازی جدید" بزنید. کد مخفی هشت حرفی برای شما نمایش داده می‌شود. دوستانتان برای پیوستن به بازی جدید شما، باید این کد هشت <br/>.حرفی را اینجا وارد کنند</span>
+           		<span class="join-description">اگر در صفحه اصلی پارتی‌گ! روی دکمه "شروع بازی جدید" بزنید. کد مخفی هشت حرفی برای شما نمایش داده می‌شود. دوستانتان برای پیوستن به بازی جدید شما، باید این کد هشت .حرفی را اینجا وارد کنند</span>
 			</div>
 		</div>
     	<div class="row">
-			<div class="col s12">
-      			<input v-model="gamerName" style="width: 300px;height: 77px;" class="inputBox" placeholder="نام خود را وارد کنید">
+			<div class="col s12 center-align">
+      			<input v-model="gamerName" style="width: 250px;height: 70px;" class="inputBox" placeholder="نام خود را وارد کنید">
 			</div>
 		</div>	
 		<div class="row">
-			<div class="col s12">
-        		<input v-model="gameToken" style="width: 300px;height: 77px;" class="inputBox" placeholder="وارد کردن کد هشت کاراکتری مخفی">
+			<div class="col s12 center-align">
+        		<input v-model="gameToken" style="width: 250px;height: 70px;" class="inputBox" placeholder="وارد کردن کد هشت کاراکتری مخفی">
 			</div>
 		</div>
         <div class="row">
