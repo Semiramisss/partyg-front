@@ -1,0 +1,23 @@
+{
+    "name":"یه دورهمی جذاب با پارتیگ",
+    "short_name":"پارتیگ",
+    "start_url":"./index.html",
+    "scope":".",
+    "display":"standalone",
+    "dir":"rtl",
+    "lang":"fa",
+    "background_color":"#64b5f6",
+    "theme_color":"#ff7777", 
+    "icons":[
+        {
+            "src":"/public/static/icons/homescreen512.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/public/static/icons/homescreen512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}

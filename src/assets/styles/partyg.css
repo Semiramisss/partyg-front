@@ -1,0 +1,662 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('./../fonts/Yekan.eot'); /* IE9 Compat Modes */
+    src: url('./../fonts/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./../fonts/Yekan.woff2') format('woff2'), /* Modern Browsers */
+    url('./../fonts/Yekan.woff') format('woff'), /* Modern Browsers */
+    url('./../fonts/Yekan.otf') format('opentype'), /* Open Type Font */
+    url('./../fonts/Yekan.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./../fonts/Yekan.svg#Yekan') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+.bg{
+    background: url('./../partyG_main.png');
+    background-size: cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
+    background: rgb(100,245,227);
+    background: linear-gradient(180deg, rgba(100,245,227,1) 0%, rgba(254,245,180,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.join_game_btn{
+    width: 340px;
+    height: 160px; 
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___2.html;
+    cursor: pointer;
+    background: url('./../buttun_3.png') no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border: none;
+
+}	
+
+.create_game_btn{
+    width: 340px;
+    height: 160px; 
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___2.html;
+    cursor: pointer;
+    background: url('./../buttun_2.png') no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border: none;
+
+}	
+
+.buttun_text{
+    position: absolute;
+    top: 70px;
+    left:15px;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+}
+#registerPartyG {
+    width: 375px;
+    height: 100%;
+    /* background-color: rgba(255,255,255,1); */
+    background: rgb(100,245,227);
+    background: linear-gradient(180deg, rgba(100,245,227,1) 0%, rgba(254,245,180,1) 50%, rgba(255,255,255,1) 100%);
+
+    --web-view-name: Meimoni_new/join;
+    --web-view-id: registerPartyG;
+    --web-scale-on-resize: true;
+    --web-center-horizontally: true;
+    --web-enable-deep-linking: true;
+    /* outline: 1px dashed red; */
+}
+.inputBox{
+    background:url('./../textfild.png') no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    padding-left:20px;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(33,33,33,0.502);
+    letter-spacing: 0.16px;
+}
+.login{
+    width: 214px;
+    height: 95px;
+    margin:10px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___2.html;
+    cursor: pointer;
+    background: url('./../buttun_3.png') no-repeat;
+    background-size: contain;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border: none;
+}
+.partyG-logo {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+}
+
+.header {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    overflow: visible;
+    width: 336px;
+    height: 32px;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(33,33,33,0.498);
+}
+	
+.join-description {
+    width: 302px;
+    height: 156px;
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgba(0,0,0,1);
+}
+
+.Line {
+    fill: transparent;
+    stroke: rgba(6,0,0,0.059);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.join-header {
+    width: 336px;
+    height: 32px;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    color: rgba(33,33,33,0.498);
+}
+
+.small_buttun {
+    left: 140px;
+    position: absolute; 
+    top: 13px;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,82,0,1);
+    letter-spacing: 0.16px;
+    position: absolute;
+    background: url('./../small_buttun.png');
+    background-size: cover;
+    border: none;
+}
+
+.title {
+    flex: 50%;
+    padding: 10px;
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    color: rgba(33,33,33,0.498);
+}
+
+.textfield {
+    overflow: visible;
+    background: url('./../textfild.png');
+    background-size: cover;
+    text-align: center;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(33,33,33,0.502);
+    letter-spacing: 0.16px;
+    border: none;
+}
+
+.share {
+    position: absolute;
+    width: 140px;
+    height: 67px;
+    left: 15px; 
+    top: 110px;
+    overflow: visible;
+    background: url('./../buttun_3.png');
+    background-size: cover;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border: none;
+}
+
+.caption {
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: rgba(33,33,33,0.502);
+    letter-spacing: 0.16px;
+}
+
+.subtitle{
+    width: 119px;
+    height: 61px;
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: rgba(36,33,38,1);
+}
+
+.gamer_name {
+    position: relative;
+    top:25px;
+    overflow: hidden;
+    width: 216px;
+    height: 30px;
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(36,33,38,1);
+}
+
+.Group {
+    width: 92px;
+    height: 92px;
+    overflow: visible;
+}
+
+.profile {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.photo {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    left: -9px;
+    top: -88px;
+    overflow: visible;
+}
+
+.step {
+    flex:50%;
+    padding: 10px;
+    text-align: left;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(33,33,33,0.498);
+}
+
+.menu {
+    flex:50%;
+    padding: 10px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_new_join___menu.html;
+    cursor: pointer;
+}
+
+.question {
+    /* white-space: nowrap; */
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(112,112,112,1);
+}
+
+.Group_question {
+    position: relative; 
+    width: 138px;
+    height: 138px;
+    overflow: visible; 
+}
+
+.profile_off {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.photo_question {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 9px;
+    top: 8px;
+    overflow: visible;
+}
+
+.profile_question {
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.inputBox_question{
+    background:url('./../textfild.png') repeat-y right;
+    background-size: cover;
+    overflow: visible;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(33,33,33,0.502);
+    letter-spacing: 0.16px;
+    border: none;
+}
+
+.cancel{
+    width: 90px;
+    height: 50px;
+    margin:2px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___2.html;
+    cursor: pointer;
+    background: url('./../small_buttun.png') no-repeat;
+    width: 89px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(255,82,0,1);
+    letter-spacing: 0.16px;
+}
+
+.profile-edit{
+    width: 214px;
+    height: 95px;
+    margin:10px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___2.html;
+    cursor: pointer;
+    background: url('./../buttun_2.png');
+    background-size: cover;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+}
+
+.profile-bg{
+	width: 300px;
+	height: 275px;
+	background: url('./../card.png') no-repeat;
+	background-size: auto;
+}
+
+.profile-image {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    left: 12px;
+       top: 12px;
+    overflow: visible;
+}
+
+.question_waiting {
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(112,112,112,1);
+}
+
+.subtitle_question {
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(33,33,33,0.498);
+    letter-spacing: 0.16px;
+}
+
+.buzz {
+    position: relative;
+    width: 32px;
+    height: 48px;
+    left: 10px;
+    top: 20px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_joined_gamers___5.html;
+    cursor: pointer;
+}
+
+.gamer_name_question {
+    position: relative;
+    top: 35px;
+    overflow: hidden;
+    text-align: right;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    color: rgba(36,33,38,1);
+}
+
+.textfield_question {
+    width: 300px;
+    height: 77px;
+    overflow: visible;
+    background: url('./../textfild.png');
+    background-size: cover;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border: none;
+}
+
+.count{
+    width: 33px;
+    height: 49px;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(36,33,38,1);
+}
+
+.responseBox{
+    background:url('./../textfild.png') no-repeat;
+    background-size: cover;
+    width: 193px;
+    height: 49px;
+    overflow: visible;
+    white-space: nowrap;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+}
+
+.small_profile {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    right: 25px;
+    overflow: visible;
+}
+.small_profile_frame {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+.small_profile_image {
+    position: absolute;
+    width: 43px;
+    height: 42px;
+    left: 5px;
+    top: 5px;
+    overflow: visible;
+}
+
+.unit{
+    width: 33px;
+    height: 29px;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(112,112,112,1);
+}
+
+.score {
+    overflow: hidden;
+    height:  72px; 
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    color: rgba(33,33,33,0.498);
+}
+
+
+.score_point {
+    position: absolute;
+    overflow: hidden;
+    width: 33px;
+    height: 49px;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: rgba(36,33,38,1);
+    margin-top: 25px;
+}
+
+.btnGame{
+    width: 214px;
+    height: 102px;
+    background: url('./../buttun_3.png');
+    background-size: cover;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_register_gamers.html;
+    cursor: pointer;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border:none;
+}
+
+.caption_score {
+    width: 107px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 12px;
+    color: rgba(33,33,33,0.498);
+    letter-spacing: 0.16px;
+}
+
+.winner_card {
+    background:url('./../card_2.png') repeat-y right;
+       background-size: cover;
+    /* position: absolute; */
+    width: 350px;
+    height: 420px;
+    left: 13px;
+    top: 243px;
+    overflow: visible;
+}
+
+.profile_winner{
+    position: absolute;
+    width: 306px;
+    height: 305px;
+    left: 5px;
+    top: 5px;
+    overflow: visible;
+}
+
+.photo_winner{
+    position: absolute;
+    width: 233px;
+    height: 233px;
+    left: 35px;
+    top: 35px;
+    overflow: visible;
+}
+
+.winner_text{
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Meimoni_register_gamers.html;
+    cursor: pointer;
+    text-align: center;
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.16px;
+    border:none;
+}
