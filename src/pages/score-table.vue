@@ -89,14 +89,25 @@ export default {
 			}
 		}).then((response)=>{
 			console.log('response score', response.data)
+			console.log('sorted response score', [...response.data].sort())
 			if(response.data){
-				this.scoreList=response.data
+				// this.scoreList=response.data
+				this.scoreList=[...response.data].sort(this.compare);
 			}
 		})
 	},
 	methods:{
 		showInnerProfile:function(){
 			this.openProfile=true;
+		},
+		compare:function(a,b){
+			if(a.points < b.points){
+				return 1;
+			}
+			if(a.points > b.points){
+				return -1;
+			}
+			return 0;
 		},
 		selectGamerProfile(gamerId){
 			return require('./../assets/images/profile/'+gamerId%10+'.png')

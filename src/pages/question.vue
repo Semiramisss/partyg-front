@@ -18,7 +18,7 @@
 				<div class="col s4" style="height:100px">
 					<div class="Group_question">
 						<img class="profile_off" src="./../assets/profile_off.png">	
-						<img class="photo_question" src="./../assets/photo_2020-09-29_17-35-11.png" >	
+						<img class="photo_question" :src="require('./../assets/images/profile/'+currentQuestionOwner%10+'.png')" >	
 					</div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col s12">
+			<div class="col s12 center-align">
 				<input style="width: 250px;height: 70px;" class="inputBox_question" v-model="answer" placeholder="پاسخ چند کلمه‌ای تو اینجا بنویس">
 			</div>
 		</div>
@@ -90,6 +90,7 @@ export default {
 			},
 			rounds:localStorage.getItem('game-rounds'),
 			currentQuestion:'',
+			currentQuestionOwner:'',
 			responsed:false,
 			answer:'',
 			currentRound:'',
@@ -116,7 +117,9 @@ export default {
 						this.$router.push('/waiting-for-answer');
 					}else{
 						this.currentQuestion=response.data[0]["text"];
+						this.currentQuestionOwner=response.data[0]["subject_id"];
 						localStorage.setItem("currentQuestion",this.currentQuestion);
+						localStorage.setItem("currentQuestionOwner",this.currentQuestionOwner);
 					}
 				}
 			}).catch(function(error){

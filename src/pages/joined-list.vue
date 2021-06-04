@@ -56,12 +56,12 @@
 				</svg>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col s12 right-align">
 				<span class="subtitle">:طول بازی</span>
 			</div>
-		</div>
-		<div class="row">
+		</div> -->
+		<!-- <div class="row">
 			<div class="col s3 center-align">
 				<label>
 					<input name="group1" type="radio" value="5" v-model="rounds" checked/>
@@ -100,7 +100,7 @@
 			<div class="col s3 center-align">
 				<span>بی نهایت</span>
 			</div>
-		</div>
+		</div> -->
 		<div class="row">
 		    <div class="col s12 center-align">
 				<button @click="startGame" style="width: 200px;height: 100px;margin:30px;" class="login" >شروع بازی </button>

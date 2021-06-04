@@ -18,7 +18,7 @@
 				<div class="col s4" style="height:120px">
 					<div class="Group_question">
 						<img class="profile_off" src="./../assets/profile_off.png">	
-						<img class="photo_question" src="./../assets/photo_2020-09-29_17-35-11.png" >	
+						<img class="photo_question"  :src="require('./../assets/images/profile/'+getCurrentQuestionOwner%10+'.png')" >	
 					</div>
 				</div>
 			</div>
@@ -76,6 +76,7 @@ export default {
 				'position':'absolute',
 			},
 			getCurrentQuestion: localStorage.getItem('currentQuestion'),
+			getCurrentQuestionOwner: localStorage.getItem('currentQuestionOwner'),
 			currentRound: localStorage.getItem("current_round"),
 			numOfRounds: localStorage.getItem("num_of_rounds"),
 			answers:[],
